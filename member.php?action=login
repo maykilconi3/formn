@@ -1,0 +1,515 @@
+
+<!DOCTYPE html><!-- start: member_login -->
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Hack Forums - Login</title>
+
+<meta property="og:url" content="https://hackforums.net" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Hack Forums" />
+<meta property="og:image" content="https://hackforums.net/hf-og-image.jpg" />
+<meta property="og:description" content="Hack Forums is your gateway into the world of hacking and cybersecurity.  With tutorials, helpful members, and millions of posts you too can learn skills.." />
+<meta property="fb:app_id" content="2403956166554074" />
+<!-- start: headerinclude -->
+<meta name="description" content="Hack Forums is your gateway into the world of hacking and cybersecurity.  With tutorials, helpful members, and millions of posts you too can learn skills." />
+<meta name="keywords" content="forum,forums,exploits,hacks, hacking,security,coding,computer,bitcoin,hosting,ethereum,facebook,twitter,hacker,hack,keyloggers,tools,scripts,bugs,bug bounty" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta charset="UTF-8">
+<meta name="theme-color" content="#333333" />
+<meta name="robots" content="noarchive">
+
+<link rel="apple-touch-icon" href="https://hackforums.net/apple-touch-icon.png" />
+<link rel="image_src" href="https://hackforums.net/apple-touch-icon.png" /> 
+<link rel="alternate" type="application/rss+xml" title="Latest Threads (RSS 2.0)" href="https://hackforums.net/syndication.php" />
+<link rel="alternate" type="application/atom+xml" title="Latest Threads (Atom 1.0)" href="https://hackforums.net/syndication.php?type=atom1.0" />
+<link type="text/css" rel="stylesheet" href="https://hackforums.net/cache/themes/theme12/global.css" />
+<link type="text/css" rel="stylesheet" href="https://hackforums.net/cache/themes/theme12/response.css" />
+<link type="text/css" rel="stylesheet" href="https://hackforums.net/cache/themes/theme12/flyover.css" />
+<link type="text/css" rel="stylesheet" href="https://hackforums.net/cache/themes/theme12/notify_4.css" />
+<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "BreadcrumbList",
+		  "itemListElement": [{
+		"@type": "ListItem",
+		"position": 1,
+		"name": "Hack Forums",
+		"item": "https://hackforums.net/index.php"
+	  },{
+		"@type": "ListItem",
+		"position": 2,
+		"name": "Login",
+		"item": "https://hackforums.net/"
+	  }]
+		}
+	</script>
+<script src="https://hackforums.net/jscripts/jquery.js#ver=1814"></script>
+<script src="https://hackforums.net/jscripts/jquery.plugins.min.js#ver=1814"></script>
+<script src="https://hackforums.net/jscripts/general.js#ver=1814"></script>
+<script src="https://hackforums.net/jscripts/response.js" defer></script>
+<script src="https://hackforums.net/jscripts/util_5.js"></script>
+<link rel="stylesheet" type="text/css" href="https://hackforums.net/fonts/fa/5p/css/all.min.css" />
+<script type="text/javascript">
+    lang.unknown_error = "An unknown error has occurred.";
+    lang.select2_match = "One result is available, press enter to select it.";
+    lang.select2_matches = "{1} results are available, use up and down arrow keys to navigate.";
+    lang.select2_nomatches = "No matches found";
+    lang.select2_inputtooshort_single = "Please enter one or more character";
+    lang.select2_inputtooshort_plural = "Please enter {1} or more characters";
+    lang.select2_inputtoolong_single = "Please delete one character";
+    lang.select2_inputtoolong_plural = "Please delete {1} characters";
+    lang.select2_selectiontoobig_single = "You can only select one item";
+    lang.select2_selectiontoobig_plural = "You can only select {1} items";
+    lang.select2_loadmore = "Loading more results…";
+    lang.select2_searching = "Searching…";
+    var cookieDomain = "hackforums.net";
+    var cookiePath = "/";
+    var cookiePrefix = "";
+    var cookieSecureFlag = "1";
+    var deleteevent_confirm = "Are you sure you want to delete this event?";
+    var removeattach_confirm = "Are you sure you want to remove the selected attachment from this post?";
+    var loading_text = 'Loading. <br />Please Wait..';
+    var saving_changes = 'Saving changes..';
+    var use_xmlhttprequest = "1";
+    var my_post_key = "a0697bed51db0213f1fd87b71c06d246";
+    var rootpath = "https://hackforums.net";
+    var imagepath = "https://hackforums.net/images/mobale";
+     var yes_confirm = "Yes";
+    var no_confirm = "No";
+    var MyBBEditor = null;
+    var spinner_image = "https://hackforums.net/images/mobale/spinner_big.gif";
+    var spinner = "<img src='" + spinner_image +"' alt='' style='display: none' />";
+    var modal_zindex = 999999;
+    var unread_pms = parseInt();
+    var unread_alerts = parseInt();
+    var nodeID = "cdb7aab3c1715051df73be967d45c7bbd5a5a8f7b88de3e0b6fa7e5a2d2d940a";
+    var socket_uid = 0;
+    var socket_url_base = "https://hackforums.net";
+    var helpbot = 1337;
+</script>
+<script defer src="https://hackforums.net/jscripts/socket.io.js"></script>
+<script defer src="https://hackforums.net/jscripts/markdown-it.min.js"></script>
+
+<!-- end: headerinclude -->
+</head>
+<body>
+<!-- start: header -->
+
+
+<script>
+	if(Cookie.get('mybb_logo_hide')) {
+		hideLogo();
+	}
+
+	function hideLogo() {
+		let head = document.head;
+		let style = document.createElement("style");
+
+		style.type = "text/css";
+		style.appendChild(document.createTextNode(`
+.logo-a { display: none; }
+.logo-hide-button { top: -8px; }
+@media only screen and (max-width: 768px) {
+.logo-hide-button {
+padding-top: 50px;
+}
+}
+`));
+
+		head.appendChild(style);
+	}
+
+	function showLogo() {
+		let head = document.head;
+		let style = document.createElement("style");
+
+		style.type = "text/css";
+		style.appendChild(document.createTextNode(`
+.logo-a { display: initial; }
+@media only screen and (max-width: 768px) {
+.logo-hide-button {
+padding-top: initial;
+}
+}
+`));
+
+		head.appendChild(style);
+	}
+
+	function processLogoToggle() {
+		if(Cookie.get('mybb_logo_hide')) {
+			Cookie.unset('mybb_logo_hide');
+			showLogo();
+		} else {
+			Cookie.set('mybb_logo_hide', 1);
+			hideLogo();
+		}
+	}
+</script>
+
+<div id="mySidenav" class="sidenav">
+	<button class="accordion"><div style="display: inline-block; width: 50%;"><span class="accordion-icon"><i class="fa fa-folder" aria-hidden="true"></i></span>Navigation</div><div style="display: inline-block; padding-left: 80px; vertical-align: middle;"><i class="fa fa-angle-down"></i></div></button>
+	<div class="panel">
+		<a href="https://hackforums.net"><i class="fa fa-home fa-lg" aria-hidden="true" style="margin-right: 5px; width: 27px;"></i>Home</a>
+		<a href="https://hackforums.net/upgrade.php"><i class="far fa-gem fa-lg" aria-hidden="true" style="margin-right: 5px; width: 27px;"></i>Upgrade</a>
+		<a href="https://hackforums.net/search.php"><i class="fa fa-search fa-lg" aria-hidden="true" style="margin-right: 5px; width: 27px;"></i>Search</a>
+		<a href="https://hackforums.net/memberlist.php"><i class="fa fa-users fa-lg" aria-hidden="true" style="margin-right: 5px; width: 27px;"></i>Memberlist</a>
+		<a href="https://hackforums.net/extras.php"><i class="fa fa-list fa-lg" aria-hidden="true" style="margin-right: 5px; width: 27px;"></i>Extras</a>
+		<a href="https://hackforums.net/tools.php"><i class="fa fa-wrench fa-lg" aria-hidden="true" style="margin-right: 5px; width: 27px;"></i>Hacker Tools</a>
+		<a href="https://hackforums.net/awardgoals.php"><i class="fa fa-trophy fa-lg" aria-hidden="true" style="margin-right: 5px; width: 27px;"></i>Award Goals</a>
+		<a href="https://hackforums.net/misc.php?action=help"><i class="fa fa-info-circle fa-lg" aria-hidden="true" style="margin-right: 5px; width: 27px;"></i>Help</a>
+		<a href="https://wiki.hackforums.net"><i class="fab fa-wikipedia-w fa-lg" style="margin-right: 5px; width: 27px;"></i>Wiki</a>
+		<a href="https://twitter.com/hackforumsnet"><i class="fab fa-twitter fa-lg aria-hidden="true" style="margin-right: 5px; width: 27px;"></i>Follow</a>
+		<a href="https://hackforums.net/contact.php"><i class="far fa-envelope fa-lg" aria-hidden="true" style="margin-right: 5px; width: 27px;"></i>Contact</a>
+	</div>
+</div>
+<div id="container">
+		<a name="top" id="top"></a>
+		<div id="header">
+			<div id="logo" style="position: relative;">
+				<div id="notify-container" style="display: none;">
+					<div id="notify-dragger" class="notify-header" style="background-color: #454545;"><span class="notify-header-heading" style="font-size: 16px;">Notifications</span><div class="float_right"><a href="notify.php"><i class="fa fa-cog fa-lg" aria-hidden="true"></i></a><a href="javascript:void(0);" onclick="Notify.processIconClick();" style="margin-left: 15px;"><i class="fa fa-times-circle fa-lg" aria-hidden="true"></i></a></div></div>
+					<div id="notify-notifications-container">
+						<i class="fa fa-spinner fa-spin fa-3x" style=" color: white; position: absolute; top: calc(50% - 40px); left: calc(50% - 25px); "></i>
+					</div>
+				</div>
+				<div class="wrapper">
+					<a href="https://hackforums.net/index.php" class="logo-a"><img src="https://hackforums.net/images/logo/Logo.Cyam.png" class="logo-img" title="Packets, Posts, and Punks" alt="Hackforums" /></a>
+					<span class="logo-hide-button" onclick="processLogoToggle();" data-tooltip="Logo Display" data-tooltip-right><i class="fas fa-eye fa-lg" aria-hidden="true"></i></span>
+				</div>
+		</div>			
+		<div id="panel">
+				<div class="upper">
+					<div class="wrapper">
+						<div class="oc-time">02-28-2023 11:32 AM</div>
+						<!-- start: header_welcomeblock_guest -->
+<span class="welcome"><a href="https://hackforums.net/member.php?action=login" class="login">Login</a> <a href="https://hackforums.net/member.php?action=register" class="register">Register</a></span>
+</div>
+</div>
+<div class="lower panel-nav-lower mobile-remove">
+	<div class="wrapper">
+<ul class="menu panel_links">
+<li class="button-dropdown" style="top: 2px; margin-right: 5px;">
+	<a href="javascript:void(0)" class="dropdown-toggle">
+		<i class="fa fa-bars fa-lg" aria-hidden="true" style="vertical-align: initial;"></i> <span>▼</span>
+	</a>
+	<ul class="dropdown-menu" style="position: absolute; padding-left: 0px; left: -19px; text-align: left; background-color: #060606; top: 21px; display: none; width: 220px; z-index: 999;">
+		<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/" class="usercp" title="Home"><i class="fa fa-home fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Home</span></a></li>
+		<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/upgrade.php" class="usercp" title="Upgrade"><i class="far fa-gem fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Upgrade</span></a></li>
+		<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/usercp.php" class="usercp" title="Account"><i class="fa fa-cog fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Account</span></a></li>
+		<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/memberlist.php" class="usercp" title="Memberlist"><i class="fa fa-users fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Memberlist</span></a></li>
+		<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/extras.php" class="usercp" title="Extra Pages"><i class="fa fa-list fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Extra Pages</span></a></li>
+		<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/tools.php" class="usercp" title="Hacker Tools"><i class="fa fa-wrench fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Hacker Tools</span></a></li>
+		<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/awardgoals.php" class="usercp" title="Award Goals"><i class="fa fa-trophy fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Award Goals</span></a></li>
+		<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/misc.php?action=help" class="usercp" title="Help Docs"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Help Docs</span></a></li>
+		<li style="display: block; padding: 8px 0px;"><a href="https://wiki.hackforums.net" class="usercp" title="HF Wiki"><i class="fab fa-wikipedia-w"></i><span style="font-size: 15px; color: #efefef;">Wiki</span></a></li>
+		<li style="display: block; padding: 8px 0px;"><a href="https://twitter.com/hackforumsnet" class="usercp" title="Twitter"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Twitter</span></a></li>
+		<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/contact.php" class="usercp" title="Contact Us"><i class="far fa-envelope fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Contact Us</span></a></li>
+	</ul>
+</li>
+	<li class="button-dropdown" style="top: 2px; margin-right: 5px;">
+				<a href="javascript:void(0)" class="dropdown-toggle">
+					<i class="fa fa-shopping-basket" aria-hidden="true"></i> <span>▼</span>
+				</a>
+				<ul class="dropdown-menu" style="position: absolute; padding-left: 0px; left: -19px; text-align: left; background-color: #060606; top: 21px; display: none; width: 220px; z-index: 999;">
+					<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/marketcp.php?action=profile&uid=0" class="usercp" title="Market Profile"><i class="fa fa-user fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Market Profile</span></a></li>
+					<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/contracts.php?uid=0" class="usercp" title="Contracts"><i class="far fa-handshake fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Contracts</span></a></li>
+					<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/marketcp.php?action=trusted" class="usercp" title="Trusted"><i class="fa fa-thumbs-up fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Trusted</span></a></li>
+					<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/marketcp.php?action=vendorlist" class="usercp" title="Vendors"><i class="fa fa-briefcase fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Vendors</span></a></li>
+					<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/buysticky.php" class="usercp" title="Buy Sticky"><i class="fa fa-sticky-note fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Buy Sticky</span></a></li>
+					<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/salestag.php" class="usercp" title="Buy Sales Tag"><i class="fa fa-tag fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Buy Sales Tag</span></a></li>
+					<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/buyfeature.php" class="usercp" title="Buy Forum Feature"><i class="far fa-sticky-note fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Buy Feature</span></a></li>
+					<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/buysigs.php" class="usercp" title="Buy Signatures"><i class="fa fa-address-card fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Buy Signatures</span></a></li>
+					<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/showbuys.php" class="usercp" title="Purchase History"><i class="fa fa-shopping-basket fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Purchase History</span></a></li>
+				</ul>
+			</li>
+			<li class="button-dropdown" style="top: 2px; margin-right: 5px;">
+				<a href="javascript:void(0)" class="dropdown-toggle">
+					<i class="fa fa-gamepad" aria-hidden="true"></i> <span>▼</span>
+				</a>
+				<ul class="dropdown-menu" style="position: absolute; padding-left: 0px; left: -19px; text-align: left; background-color: #060606; top: 21px; display: none; width: 210px; z-index: 999;">
+					<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/gamecp.php" class="usercp" title="Hack Game"><i class="fa fa-gamepad fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Hack Game</span></a></li>
+					<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/hackuman.php" class="usercp" title="Hackúman"><i class="fas fa-paw-claws fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Hackúman</span></a></li>
+					<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/devnullports.php" class="usercp" title="/Dev/Null:Ports"><i class="fa fa-sitemap fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">/Dev/Null:Ports</span></a></li>
+					<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/lottery.php" class="usercp" title="Lottery"><i class="fa fa-ticket fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Lottery</span></a></li>
+					<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/scratchcard.php" class="usercp" title="Scratchcards"><i class="far fa-clone fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Scratchcards</span></a></li>
+					<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/sportsbook.php" class="usercp" title="Sportsbook"><i class="fas fa-football-ball fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Sportsbook</span></a></li>
+					<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/blackjack.php" class="usercp" title="Blackjack"><i class="far fa-money-bill fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Blackjack</span></a></li>
+					<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/slots.php" class="usercp" title="Slots"><i class="fa fa-bomb fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Slots</span></a></li>
+					<li style="display: block; padding: 8px 0px;"><a href="https://hackforums.net/cryptogame.php" class="usercp" title="Crypto Game"><i class="fab fa-bitcoin fa-lg" aria-hidden="true"></i><span style="font-size: 15px; color: #efefef;">Crypto Game</span></a></li>
+				</ul>
+			</li>
+</ul>
+<ul class="menu user_links">
+                      <li><a href="https://hackforums.net/search.php?action=getfavorites" title="Favorites" data-tag="Favorites" data-tooltip="Favorites"><i class="fa fa-heart fa-lg" aria-hidden="true"></i></a></li>
+<li><a href="#" title="New Threads" data-tag="New Threads" data-tooltip="New Threads"><i class="fa fa-file-contract fa-lg" aria-hidden="true"></i></a></li>
+<li><a href="https://hackforums.net/search.php?action=getnew" title="New Posts" data-tag="New Posts" data-tooltip="New Posts"><i class="fa fa-file-alt fa-lg" aria-hidden="true"></i></a></li>
+<li><a href="https://hackforums.net/search.php?action=finduserthreads&amp;uid=0" title="Your Threads" data-tag="Your Threads" data-tooltip="Your Threads"><i class="far fa-file fa-lg" aria-hidden="true"></i></a></li>
+<li><a href="https://hackforums.net/search.php?action=finduser&amp;uid=0" title="Your Posts" data-tag="Your Posts" data-tooltip="Your Posts"><i class="far fa-file-signature fa-lg" aria-hidden="true"></i></a></li>
+			<li><a href="https://hackforums.net/blog.php" class="blogs" title="Blogs" data-tag="Blogs" data-tooltip="Blogs"><i class="far fa-newspaper fa-lg" aria-hidden="true"></i></a></li>
+		</ul>
+	</div>
+	<br class="clear" />
+</div>
+				<div class="modal" id="quick_login" style="display: none;">
+					<form method="post" action="https://hackforums.net/member.php">
+						<input name="action" type="hidden" value="do_login" />
+						<input name="url" type="hidden" value="" />
+						<input name="quick_login" type="hidden" value="1" />
+						<table width="100%" cellspacing="0" cellpadding="5" border="0" class="tborder">
+							<tr>
+								<td class="thead" colspan="2"><strong>Login</strong></td>
+							</tr>
+							<tr>
+								<td class="trow1" width="25%"><strong>Username/Email:</strong></td>
+								<td class="trow1"><input name="quick_username" id="quick_login_username" type="text" value="" class="textbox initial_focus" /></td>
+							</tr>
+							<tr>
+								<td class="trow2"><strong>Password:</strong></td>
+								<td class="trow2">
+									<input name="quick_password" id="quick_login_password" type="password" value="" class="textbox" /> <a href="https://hackforums.net/member.php?action=lostpw" class="lost_password">Lost Password?</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="trow1">&nbsp;</td>
+								<td class="trow1 remember_me">
+									<input name="quick_remember" id="quick_login_remember" type="checkbox" value="yes" class="checkbox" checked="checked" />
+									<label for="quick_login_remember">Remember me</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="trow2" colspan="2">
+									<div align="center"><input name="submit" type="submit" class="button" value="Login" /></div>
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+				<script type="text/javascript">
+var is_guest_account = true;
+					$("#quick_login input[name='url']").val($(location).attr('href'));
+				</script>
+
+</div></div><div><div class="navbar" id="myNavbar">
+        <a class="header_avatar" href="https://hackforums.net/member.php?action=login"><img src="https://hackforums.net/images/mobale/default_avatar.png" height="36" width="36" alt="Default Avatar" /></a>
+        <a class="header_avatar" href="https://hackforums.net/member.php?action=login" style="font-weight: bold; position: relative;"><span style="position: relative; top: 5px; left: -2px; color: #00ff00;">Login</span></a>
+        <a class="header_avatar" href="https://hackforums.net/member.php?action=register" style="font-weight: bold; position: relative;"><span style="position: relative; top: 5px; left: -2px; color: #00ff00;">Register</span></a>
+  	<a href="javascript:void(0);" class="menu" onclick="toggleNav()">☰</a>
+<!-- end: header_welcomeblock_guest -->
+			                </div>
+		                 </div>
+		<div id="content">
+			<div class="wrapper">
+<!--//
+<div class="error" style="text-align:center;"><em>Bytes Bonus Day! Earn 12 Bytes for each new thread and get 10 Bytes for posting new replies. Earn your Bytes now!</em></div>
+-->
+
+				
+				
+				
+				
+				
+				
+				<!-- start: nav -->
+<div class="breadcrumb">
+<!-- start: nav_bit -->
+<a href="https://hackforums.net/index.php" class="breadcrumb-back-arrow" style="display: none;" title="Hack Forums" aria-label="Hack Forums"><i class="fa fa-home" aria-hidden="true"></i></a>
+<span class="arrow" class="breadcrumb-back-arrow-span" style="display: none;"></span>
+
+<a href="https://hackforums.net/index.php">Hack Forums</a>
+<span class="arrow"></span>
+<!-- end: nav_bit --><!-- start: nav_sep_active -->
+&rsaquo;
+<!-- end: nav_sep_active --><!-- start: nav_bit_active -->
+<a href="">Login</a>
+<span class="arrow"></span>
+<!-- end: nav_bit_active -->
+</div>
+<!-- end: nav -->
+				<br />
+<div class="mam-header " align="center" ><a href="https://www.blackshop.to/signup.html?r=hf" target="_blank" rel="noopener"><img src="https://hackforums.net/uploads/mam/774.gif" alt="HF Rulez the Universe" /></a><a href="https://t.me/sircr0codile" target="_blank" rel="noopener"><img src="https://hackforums.net/uploads/mam/905.png" alt="HF Rulez the Universe" /></a></div>
+<div class="mam-dot-container" style="display: none; text-align:center;">
+	<span class="mam-dot mam-dot-first"></span>
+	<span class="mam-dot"></span>
+</div>
+<script>		
+	var mamTimeout = false;
+	var mamHeader = $('.mam-header');
+
+	function triggerMamTimeout() {
+		mamTimeout = setTimeout(() => {
+			toggleMam();		
+			triggerMamTimeout();
+		}, 5000);
+	}
+
+	function toggleMam() {
+		if(mamHeader.hasClass('mam-header-switch')) {
+			mamHeader.removeClass('mam-header-switch');
+		} else {
+			mamHeader.addClass('mam-header-switch');
+		}
+	}
+
+	$('.mam-dot').on('click', function(e) {
+		clearTimeout(mamTimeout);
+		
+		if(!$(this).hasClass('mam-dot-first') != $('.mam-header').hasClass('mam-header-switch')) {
+			toggleMam();
+		}
+	});
+
+	triggerMamTimeout();
+</script>
+<!-- end: header -->
+<br />
+
+
+<form action="member.php" method="post">
+<table border="0" cellspacing="0" cellpadding="5" class="tborder">
+<tr>
+<td class="thead" colspan="2"><strong>Login</strong></td>
+</tr>
+<!-- start: flyover_login_box -->
+<tr>
+	<td class="trow1 flyover" style="text-align: center" colspan="2">
+		<!-- start: flyover_login_box_button -->
+<a href='flyover.php?action=login&provider=GitHub'>
+	<img src='images/social/social-button-github.png' alt='Login with GitHub' title='Login with GitHub' class="flyover-social-button" />
+</a>
+<!-- end: flyover_login_box_button --><!-- start: flyover_login_box_button -->
+<a href='flyover.php?action=login&provider=Google'>
+	<img src='images/social/social-button-google.png' alt='Login with Google' title='Login with Google' class="flyover-social-button" />
+</a>
+<!-- end: flyover_login_box_button --><!-- start: flyover_login_box_button -->
+<a href='flyover.php?action=login&provider=Twitter'>
+	<img src='images/social/social-button-twitter.png' alt='Login with Twitter' title='Login with Twitter' class="flyover-social-button" />
+</a>
+<!-- end: flyover_login_box_button -->
+	</td>
+</tr>
+<!-- end: flyover_login_box -->
+<tr>
+<td class="trow1"><strong>Username/Email:</strong></td>
+<td class="trow1"><input type="text" class="textbox" name="username" size="25" style="width: 200px;" value="" tabindex="1" /></td>
+</tr>
+<tr>
+<td class="trow2"><strong>Password:</strong><br /><span class="smalltext">Please note that passwords are case sensitive.</span></td>
+<td class="trow2"><input type="password" class="textbox" name="password" size="25" style="width: 200px;" value="" tabindex="2" /> <div style="display: inline-block; vertical-align: bottom;"><div>(<a href="member.php?action=lostpw">Lost your password?</a>)</div><div style="margin-top: 4px;">(<a href="recovery.php">Account Recovery</a>)</div></td>
+</tr>
+<tr>
+<td class="trow2"><strong>Gauth/2FA</strong><br /><span class="smalltext">Please enter your Gauth/2FA code, if used.</span></td>
+<td class="trow2"><input name="quick_gauth_code" id="quick_gauth_code"size="25" style="width: 200px;" type="text" value="" class="textbox" tabindex="3" /></td>
+</tr>
+<tr>
+<td class="trow1" colspan="2" align="center"><label title="If ticked, your login details will be remembered on this computer, otherwise, you will be logged out as soon as you close your browser."><input type="checkbox" class="checkbox" name="remember" checked="checked" value="yes" /> Remember me</label></td>
+</tr>
+<tr>
+<td class="trow1" colspan="2" align="center"><span class="tinytext"><a href="https://hackforums.net/member.php?action=register">Don't have an account? Sign up!</a></span></td>
+</tr>
+
+</table>
+<br />
+<div align="center"><input type="submit" class="button" name="submit" value="Login" /></div>
+<input type="hidden" name="action" value="do_login" />
+<input type="hidden" name="url" value="https://hackforums.net/" />
+</form>
+<!-- start: footer -->
+<div class="mam-footer " align="center"><a href="https://boosted.wtf/ref/vqglp" target="_blank" rel="noopener" style="margin-right: 7px;"><img src="https://hackforums.net/uploads/mam/914.jpg" alt="HF Rulez the Universe" /></a><a href="https://hackforums.net/showthread.php?tid=6209339" target="_blank" rel="noopener" style="margin-right: 7px;"><img src="https://hackforums.net/uploads/mam/863.gif" alt="HF Rulez the Universe" /></a></div>
+<div class="mam-dot-container" style="display: none; text-align:center;">
+	<span class="mam-dot mam-dot-first"></span>
+	<span class="mam-dot"></span>
+</div>
+<script>		
+	var mamTimeoutFooter = false;
+	var mamFooter = $('.mam-footer');
+
+	function triggerMamTimeoutFooter() {
+		mamTimeoutFooter = setTimeout(() => {
+			toggleMamFooter();		
+			triggerMamTimeoutFooter();
+		}, 5000);
+	}
+
+	function toggleMamFooter() {
+		if(mamFooter.hasClass('mam-header-switch')) {
+			mamFooter.removeClass('mam-header-switch');
+		} else {
+			mamFooter.addClass('mam-header-switch');
+		}
+	}
+
+	$('.mam-dot').on('click', function(e) {
+		clearTimeout(mamTimeoutFooter);
+		
+		if(!$(this).hasClass('mam-dot-first') != $('.mam-footer').hasClass('mam-header-switch')) {
+			toggleMamFooter();
+		}
+	});
+
+	triggerMamTimeoutFooter();
+</script>
+	<div style="text-align:center">
+        <button style="background-color:#000; border: 2px solid #ccc; height:3px;" onclick="colorBlack()"></button>
+	<button style="background-color:#282828; border: 2px solid #ccc; height:3px;" onclick="colorDefault()"></button>
+        <button style="background-color:#343434; border: 2px solid #ccc; height:3px;" onclick="colorGrey()"></button>
+	</div>
+
+
+	</div>
+</div>
+<div id="footer">
+	<div class="upper">
+		<div class="wrapper">
+			
+			<ul class="menu bottom_links">
+				<!-- start: footer_contactus -->
+<li><a href="https://hackforums.net/contact.php">Contact Us</a></li>
+<!-- end: footer_contactus -->
+				<li><a href="/">Hack Forums</a></li>
+				<li><a href="misc.php?action=help&hid=25">Advertise</a></li>
+                                <li><a href="https://hackforums.net/myawards.php" rel="nofollow">Awards</a></li>
+                                <li><a href="https://hackforums.net/misc.php?action=markread" rel="nofollow">Mark All Forums Read</a></li>
+                                <li><a href="https://hackforums.net/stats.php" title="Hack Forums Statistics">Statistics</a></li>
+                                <li><a href="https://hackforums.net/showstaff.php" title="Hack Forums Staff">Staff</a></li>
+                                <li><a href="https://apidocs.hackforums.net/" title="Hack Forums API">API</a></li>
+				<li><a href="#top">Top</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="lower">
+		<div class="wrapper">
+			<span id="copyright">Powered By <a href="https://www.mybb.com" target="_blank" rel="noopener">MyBB</a> - <a href="https://hackforums.net/" target="_blank">HackForums</a>, &copy; 2007-2023</span>
+		</div>
+	</div>
+</div>
+
+<script>
+
+	if(Cookie.get('mybb_bgcolor')) {
+		document.body.style.backgroundColor = Cookie.get('mybb_bgcolor');	
+	}
+
+function colorBlack() {
+    document.body.style.backgroundColor = '#000';
+	Cookie.set('mybb_bgcolor', "#000");
+}
+
+function colorGrey() {
+    document.body.style.backgroundColor = '#343434';
+	Cookie.set('mybb_bgcolor', "#343434");
+}
+	
+function colorDefault() {
+    document.body.style.backgroundColor = '#282828';
+	Cookie.unset('mybb_bgcolor');
+}
+	
+</script>
+
+
+</div>
+<!-- end: footer -->
+</body>
+</html>
+<!-- end: member_login -->
